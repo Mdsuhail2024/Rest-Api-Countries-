@@ -1,0 +1,120 @@
+.back-button {
+    text-decoration: none;
+    color:  inherit;
+    padding: 6px 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    /* background: pink; */
+    cursor: pointer;
+    background-color: var(--element-color);
+}
+body {
+    --background-color: white;
+    --text-color: black;
+    --element-color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+body.dard{
+  --background-color:  hsl(207, 26%, 17%);
+  --text-color: white;
+  --element-color:  hsl(209, 23%, 22%);
+}
+
+main {
+    padding: 24px;
+  }
+  .country-details-conteiner {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+.indivisual-country {
+    /* max-width: 1250px;  */
+    /* margin-inline: auto; */
+    padding-top: 60px;
+     /* background: blue; */
+ }
+.country-details {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    margin-top: 84px;
+    background-color: var(--element-color);
+    color: var(--text-color);
+}
+.country-details img {
+    width: 40%;
+    border: 0.5px solid #999;
+} 
+
+.detail-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 150px;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    /* background: pink; */
+}
+.border-countries a {
+    text-decoration: none;
+    color:  inherit;
+    padding: 4px 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    /* margin-inline: 4px; */
+    font-size: 14px;
+}
+.border-countries{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 30px;
+    gap: 8px;
+}
+
+.detail-text p {
+    margin: 0;
+}
+.theme-changer {
+    cursor: pointer;
+}
+/* .dark-light {
+
+} */
+
+@media(max-width: 1000px) {
+    .country-details{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .detail-text {
+        display: block;
+        gap: 2px;
+    }
+    .detail-text p {
+        margin: 12px;
+    }
+    .country-details img {
+        width: 100%;
+        max-width: 500px;
+    } 
+    .indivisual-country {
+        padding-top: 24px;
+     }
+     .detail-text {
+        gap: 32px;
+     }
+     .top-level{
+        margin: 14px;
+     }
+     .border-countries{
+        padding-top: 180px;
+    }
+    .back-button{
+        padding-top: 12px;
+    }
+    .country-details{
+        margin-top: 55px;
+    }
+}
